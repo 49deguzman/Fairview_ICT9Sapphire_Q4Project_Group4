@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      background: linear-gradient(to bottom right, #004d7a, #003b5c);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+    }
+
+    .left-panel,
+    .right-panel {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left-panel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .right-panel {
+      background-color: #EDF5F3;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 400px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+      background-color: #fff;
+      color: #000;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #003b5c;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+
+      .left-panel,
+      .right-panel {
+        height: 50%;
+      }
+
+      .left-panel img {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="main-content">
+  <div class="left-panel">
+    <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/school_logo/1691914640-2616.png" alt="OB Montessori Illustration" />
+  </div>
+
+  <div class="right-panel">
+    <div class="card">
+      <h3 class="text-center mb-4">Login</h3>
+      <form id="logg" method="get" action="https://your-redirect-url.com">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+        </div>
+        <div class="mb-3">
+          <label for="pazz" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pazz" placeholder="Password" required>
+        </div>
+
+        <a href="mainpage.html" class="btn btn-primary w-100" role="button"
+          onclick="if (document.getElementById('logg').checkValidity()) { alert('Success! Redirecting you . . .'); } else { event.preventDefault(); }">Login</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Feel free to contact us on IG (obmontessoriofficial)<br>© 2025 De Guzman, Lepasana, David, Bernardo, & Palafox</p>
+</div>
+
+</body>
+</html>

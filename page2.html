@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's Next</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style type="text/css">
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: royalblue;
+      color: white;
+      text-align: center;
+    }
+
+    .opinion-box {
+      font-family: Century Gothic;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+      margin: 10px;
+      border: solid 1px #ccc;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 350px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; 
+    }
+
+    .opinion-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #004d7a, #003b5c);
+      color: white;
+    }
+
+    .navbar {
+      background-color: #003b5c;
+    }
+
+    .navbar-brand {
+      border: 3px solid white;
+      border-radius: 50%;
+      padding: 10px;
+      background-color: white;
+    }
+
+    .navbar-brand img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .nav-link {
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      color: #ffb74d;
+    }
+
+    .footer {
+      background-color: #003b5c;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-top: 80px;
+      color: white;
+    }
+
+    .opinion-image {
+      width: 80%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      max-height: 300px; 
+      margin: 0 auto;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-top: 10px; 
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-primary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand"><img id="logo" src="https://ugc.production.linktr.ee/811c8102-90fa-45dc-b354-f5f3a8ff5043_OBMC-Logo-A-2022.png"></a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="mainpage.html"><b><u>Menu</u></b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page2.html"><b><u>What's Next</u></b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page3.html"><b><u>Rate Us</u></b></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <b><u>Select Quarter</u></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="page5.html">Quarter 1</a></li>
+              <li><a class="dropdown-item" href="page6.html">Quarter 2</a></li>
+              <li><a class="dropdown-item" href="page7.html">Quarter 3</a></li>
+              <li><a class="dropdown-item" href="page8.html">Quarter 4</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://docs.google.com/document/d/1elk6nLs97hBPiQg_4wpOnQLDU7o94mlsi3tRlNfqyK4/edit?usp=sharing"><b><u>Sources</u></b></a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control" type="text" placeholder="Search...">
+          <button class="btn btn-success" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <h1>What's Next?</h1>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center g-4">
+
+      <div class="col-md-3">
+        <div class="opinion-box">
+          <p>"Next year is definitely gonna be harder"</p>
+          <p class="name">- Lepasana</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="opinion-box">
+          <p>"I don't want to code anymore"</p>
+          <p class="name">- De Guzman</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="opinion-box">
+          <p>"Still coding, but it's worse. I think... I hope not."</p>
+          <p class="name">- David</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="opinion-box">
+          <img class="opinion-image" src="https://cdn.discordapp.com/attachments/1369467734001193153/1371844718136131584/image.png?ex=68249d74&is=68234bf4&hm=e78c3f6b478db0cb8fc8cbb2ed1945eb9300ab280f8014516a1eab66808edcef&">
+          <p class="name">- Bernardo</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="opinion-box">
+          <p>"If you’re a young boy and you’re in a situation where you’re an F student, let me tell you something, you got a bright future, buddy. You see, an A student is the perfect employee. He works for me and he does his job perfectly. A B student, that’s my manager. The C students, those are business owners. Then, you got the D. D is between a business owner and an inventor. It’s someone that owns a business, but truly wants to invent something. He just doesn’t know how to do it. And then you got the F students. The F students are inventors. They’re so flipping creative that they couldn’t sit in class because whatever people were trying to put in their head, they know it’s all lies."</p>
+          <p class="name">- Palafox</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="footer">
+    <footer>
+      <center>
+        <p>Feel free to contact us on IG (obmontessoriofficial)<br>© 2025 De Guzman, Lepasana, David, Bernardo, & Palafox</p>
+      </center>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
